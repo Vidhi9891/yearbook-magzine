@@ -95,8 +95,21 @@ async function init() {
   state.bookFile = params.get('book');
 
   if (!state.bookFile) {
-    showError('No book specified. Please select a book from the library.');
-    return;
+    try {
+      const res = await fetch('books/books.json');
+      const books = await res.json();
+      if (books && books.length > 0) {
+        state.bookFile = books[0].file;
+        state.bookData = books[0];
+      }
+    } catch {
+      showError('Failed to load book metadata.');
+      return;
+    }
+    if (!state.bookFile) {
+      showError('No books found in the library.');
+      return;
+    }
   }
 
   try {
@@ -133,6 +146,7 @@ async function init() {
 // ============================================================
 
 async function loadBookMetadata() {
+  if (state.bookData) return;
   try {
     const res = await fetch('books/books.json');
     const books = await res.json();
