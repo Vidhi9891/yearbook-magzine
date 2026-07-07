@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/yearbook2026",
-      "destination": "/viewer.html?book=reverie%20yearbook%20farwell.pdf"
+      "destination": "/viewer.html"
     }
   ]
 }
