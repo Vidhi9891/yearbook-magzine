@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+
 # Digital Library — Interactive Flipbook Platform
 
 A premium, production-ready digital flipbook library built with vanilla HTML, CSS, and JavaScript. Zero build tools, no backend, no frameworks — everything runs on GitHub Pages.
@@ -26,6 +28,7 @@ Features a realistic **bookshelf** layout with wooden shelves, auto-rendered PDF
 ## 🚀 Deploy to GitHub Pages
 
 1. **Push to GitHub**:
+
    ```bash
    git init
    git add .
@@ -71,10 +74,10 @@ Edit `books/books.json` and add a new object:
 ]
 ```
 
-| Field   | Required | Description |
-|---------|----------|-------------|
-| `title` | Yes      | The book title displayed on the shelf and in the viewer |
-| `file`  | Yes      | The PDF filename in `books/` folder (must match exactly, including spaces) |
+| Field   | Required | Description                                                                        |
+| ------- | -------- | ---------------------------------------------------------------------------------- |
+| `title` | Yes      | The book title displayed on the shelf and in the viewer                            |
+| `file`  | Yes      | The PDF filename in `books/` folder (must match exactly, including spaces)         |
 | `cover` | No       | **No longer used.** Cover is automatically rendered from the first page of the PDF |
 
 > **Note:** The first page of your PDF should be a designed cover page. It will be automatically rendered by PDF.js as the book's cover on the shelf and as the first page inside the viewer.
@@ -110,10 +113,10 @@ If your PDF filename contains spaces (e.g. `reverie yearbook farwell.pdf`), writ
 Edit the `:root` CSS variables in any `.css` file to change the color scheme:
 
 ```css
---accent: #7c3aed;          /* Primary accent color */
---accent-hover: #8b5cf6;    /* Hover state */
---bg-primary: #0c0a14;      /* Dark background */
---text-primary: #ffffff;     /* Text color */
+--accent: #7c3aed; /* Primary accent color */
+--accent-hover: #8b5cf6; /* Hover state */
+--bg-primary: #0c0a14; /* Dark background */
+--text-primary: #ffffff; /* Text color */
 ```
 
 ### Bookshelf
@@ -121,8 +124,8 @@ Edit the `:root` CSS variables in any `.css` file to change the color scheme:
 The wooden shelf color is controlled by two variables in `library.css`:
 
 ```css
---shelf-wood-top: #3d2b1f;     /* Top edge of shelf */
---shelf-wood-bottom: #1f1410;  /* Bottom edge of shelf */
+--shelf-wood-top: #3d2b1f; /* Top edge of shelf */
+--shelf-wood-bottom: #1f1410; /* Bottom edge of shelf */
 ```
 
 ### Book Dimensions
@@ -149,19 +152,19 @@ The project uses [Inter](https://fonts.googleapis.com/css2?family=Inter) from Go
 
 ## ⌨️ Keyboard Shortcuts
 
-| Key | Action |
-|-----|--------|
-| `←` | Previous page |
-| `→` / `Space` | Next page |
-| `Home` | First page |
-| `End` | Last page |
-| `+` / `=` | Zoom in |
-| `-` | Zoom out |
-| `0` | Reset zoom |
-| `F` | Toggle fullscreen |
-| `B` | Toggle bookmark |
-| `D` | Toggle dark mode |
-| `Esc` | Exit fullscreen |
+| Key           | Action            |
+| ------------- | ----------------- |
+| `←`           | Previous page     |
+| `→` / `Space` | Next page         |
+| `Home`        | First page        |
+| `End`         | Last page         |
+| `+` / `=`     | Zoom in           |
+| `-`           | Zoom out          |
+| `0`           | Reset zoom        |
+| `F`           | Toggle fullscreen |
+| `B`           | Toggle bookmark   |
+| `D`           | Toggle dark mode  |
+| `Esc`         | Exit fullscreen   |
 
 ## 📄 License
 
@@ -171,4 +174,8 @@ MIT — Free for personal and commercial use.
 
 - [PDF.js](https://mozilla.github.io/pdf.js/) by Mozilla
 - [StPageFlip](https://github.com/Nodlik/StPageFlip) by Nodlik
-- [Inter](https://rsms.me/inter/) font by Rasmus Andersson
+- # [Inter](https://rsms.me/inter/) font by Rasmus Andersson
+
+# yearbook-magzine
+
+> > > > > > > d212c37b295cf5f38d11db85a13df55fd7774357
